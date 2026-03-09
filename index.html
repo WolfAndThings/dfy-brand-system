@@ -486,6 +486,40 @@
             border-radius: 50%;
             flex-shrink: 0;
         }
+        .pricing-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #666;
+            margin-top: -0.5rem;
+            margin-bottom: 1rem;
+        }
+        .pricing-addon-header {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #C4A66C;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(196,166,108,0.2);
+        }
+        .pricing-addons {
+            list-style: none;
+        }
+        .pricing-addons li {
+            font-size: 0.82rem;
+            color: #bbb;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+        }
+        .pricing-addons li strong {
+            color: #fff;
+        }
+        .addon-desc {
+            font-size: 0.72rem;
+            color: #777;
+        }
         .pricing-card .btn {
             margin-top: 2rem;
             text-align: center;
@@ -846,6 +880,7 @@
                 <div class="pricing-card fade-up">
                     <div class="pricing-tier">Starter</div>
                     <div class="pricing-amount">$5,000</div>
+                    <div class="pricing-label">One-Time Build</div>
                     <ul class="pricing-features">
                         <li>Brand DNA Document</li>
                         <li>50+ AI-Generated Images</li>
@@ -858,6 +893,7 @@
                 <div class="pricing-card featured fade-up">
                     <div class="pricing-tier">Growth</div>
                     <div class="pricing-amount">$7,500</div>
+                    <div class="pricing-label">One-Time Build + Recurring</div>
                     <ul class="pricing-features">
                         <li>Everything in Starter</li>
                         <li>Content Automation Setup</li>
@@ -865,17 +901,31 @@
                         <li>Airtable + Auto-Posting</li>
                         <li>7-Day Delivery</li>
                     </ul>
+                    <div class="pricing-addon-header">Add Monthly Autopilot</div>
+                    <ul class="pricing-addons">
+                        <li><strong>Content Autopilot</strong> &mdash; $1,500/mo<br><span class="addon-desc">Daily posts, stories, carousels generated &amp; posted for you</span></li>
+                        <li><strong>AI Video Content</strong> &mdash; $2,500/mo<br><span class="addon-desc">Reels, TikToks, product videos &mdash; scripted, shot, posted</span></li>
+                        <li><strong>Lead Capture System</strong> &mdash; $1,500 one-time<br><span class="addon-desc">ManyChat flows, lead magnets, automated DM funnels</span></li>
+                    </ul>
                     <a href="mailto:alex@loopworker.com" class="btn btn-primary">Get Started</a>
                 </div>
                 <div class="pricing-card fade-up">
                     <div class="pricing-tier">Scale</div>
                     <div class="pricing-amount">$10,000</div>
+                    <div class="pricing-label">One-Time Build + Full Service</div>
                     <ul class="pricing-features">
                         <li>Everything in Growth</li>
                         <li>Multi-Brand System</li>
                         <li>Advanced Automation</li>
                         <li>Priority Support</li>
                         <li>7-Day Delivery</li>
+                    </ul>
+                    <div class="pricing-addon-header">Full-Service Add-Ons</div>
+                    <ul class="pricing-addons">
+                        <li><strong>Content Autopilot</strong> &mdash; $2,000/mo<br><span class="addon-desc">Multi-platform daily content across all brands</span></li>
+                        <li><strong>AI Video Suite</strong> &mdash; $5,000/mo<br><span class="addon-desc">Full video production &mdash; reels, ads, product films</span></li>
+                        <li><strong>Lead Capture System</strong> &mdash; $1,500 one-time<br><span class="addon-desc">ManyChat, email sequences, automated funnels</span></li>
+                        <li><strong>Strategy Consulting</strong> &mdash; $500/hr<br><span class="addon-desc">1:1 brand strategy, content audits, campaign planning</span></li>
                     </ul>
                     <a href="mailto:alex@loopworker.com" class="btn btn-outline">Get Started</a>
                 </div>
