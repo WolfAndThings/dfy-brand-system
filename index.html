@@ -30,6 +30,19 @@
     "areaServed": "Worldwide"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Loop.Worker",
+    "url": "https://services.loopworker.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://services.loopworker.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -251,6 +264,28 @@
     .final-cta { text-align: center; }
     .final-cta p { margin: 0 auto 1.5rem; }
     .final-cta-actions { display: flex; justify-content: center; gap: .8rem; flex-wrap: wrap; }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 1.8rem;
+    }
+    .faq-item {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.1rem;
+    }
+    .faq-item h4 {
+      color: #fff;
+      font-size: .92rem;
+      margin-bottom: .45rem;
+    }
+    .faq-item p {
+      max-width: none;
+      font-size: .88rem;
+      color: #a8a8a8;
+    }
 
     footer { padding: 2.5rem 1.2rem; text-align: center; border-top: 1px solid rgba(255,255,255,.07); }
     footer p { font-size: .75rem; color: #555; margin: 0 auto; }
@@ -287,12 +322,14 @@
     @media (max-width: 780px) {
       .nav-links a:not(.nav-cta) { display: none; }
       .hero-content { padding: 0 1.1rem 3rem; }
-      .case-grid, .proof-strip, .results-grid, .portfolio-grid, .deliverables-grid, .pricing-grid, .lead-wrap { grid-template-columns: 1fr; }
+      .case-grid, .proof-strip, .results-grid, .portfolio-grid, .deliverables-grid, .pricing-grid, .lead-wrap, .faq-grid { grid-template-columns: 1fr; }
       .btn { width: 100%; max-width: 420px; }
       .mobile-audit-cta { display: block; }
       footer { padding-bottom: 6rem; }
     }
   </style>
+  <meta property="og:image" content="https://services.loopworker.com/LoopWorker/BRAND_REVIEW/CULT_BRAND/01_burger.png" />
+  <meta name="twitter:image" content="https://services.loopworker.com/LoopWorker/BRAND_REVIEW/CULT_BRAND/01_burger.png" />
 </head>
 <body>
   <nav>
@@ -611,8 +648,76 @@
     </div>
   </section>
 
+  <hr class="divider" />
+
+  <section>
+    <div class="container">
+      <h3 class="fade-up">FAQ</h3>
+      <h2 class="fade-up">Common Questions Before You Book</h2>
+      <div class="faq-grid">
+        <div class="faq-item fade-up">
+          <h4>How fast can we launch?</h4>
+          <p>Most brand systems are delivered in 7 days, with final export and rollout guidance included.</p>
+        </div>
+        <div class="faq-item fade-up">
+          <h4>Do you use our current brand guidelines?</h4>
+          <p>Yes. We map your existing visual identity first, then build prompts and production rules around it.</p>
+        </div>
+        <div class="faq-item fade-up">
+          <h4>Can this replace traditional shoots?</h4>
+          <p>For many campaign and social use cases, yes. For edge cases, we recommend hybrid production.</p>
+        </div>
+        <div class="faq-item fade-up">
+          <h4>Is this only for one industry?</h4>
+          <p>No. Current style systems are built for hospitality, DTC, luxury, agencies, and creator brands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How fast can we launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most brand systems are delivered in 7 days, with final export and rollout guidance included."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you use our current brand guidelines?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We map your existing visual identity first, then build prompts and production rules around it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can this replace traditional shoots?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For many campaign and social use cases, yes. For edge cases, we recommend hybrid production."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this only for one industry?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Current style systems are built for hospitality, DTC, luxury, agencies, and creator brands."
+        }
+      }
+    ]
+  }
+  </script>
+
   <footer>
-    <p>&copy; 2026 Loop.Worker &middot; <a href="mailto:alex@loopworker.com">alex@loopworker.com</a> &middot; <a href="https://instagram.com/loop.worker" target="_blank" rel="noopener noreferrer">@loop.worker</a></p>
+    <p>&copy; 2026 Loop.Worker &middot; <a href="mailto:alex@loopworker.com">alex@loopworker.com</a> &middot; <a href="https://instagram.com/loop.worker" target="_blank" rel="noopener noreferrer">@loop.worker</a> &middot; <a href="style-intelligence-guide.html">Style Intelligence Guide</a></p>
   </footer>
 
   <div class="mobile-audit-cta">
@@ -658,7 +763,7 @@
     if (auditForm) {
       auditForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        var BOOKING_URL = 'https://calendly.com/alex-loopworker/creative-audit';
+        var BOOKING_URL = 'https://calendly.com/loopworker/30min';
         var data = new FormData(auditForm);
         var name = data.get('name') || '';
         var email = data.get('email') || '';
