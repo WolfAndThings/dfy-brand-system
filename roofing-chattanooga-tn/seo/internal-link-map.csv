@@ -1,0 +1,6 @@
+from_url,to_url,anchor_text,reason
+/,/services/roof-replacement.html,Roof Replacement in Chattanooga,capture primary service intent
+/,/services/shingle-roofing.html,Shingles Roofing,capture urgent intent
+/services/roof-repair.html,/services/roof-replacement.html,Replacement service,cross-link related services
+/services/roof-replacement.html,/contact.html,get your quote,conversion CTA
+/,/contact.html,free estimate,route homepage visitors to conversion

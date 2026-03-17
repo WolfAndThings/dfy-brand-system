@@ -1,0 +1,6 @@
+from_url,to_url,anchor_text,reason
+/,/services/spring-replacement.html,Spring Replacement in Reno,capture primary service intent
+/,/services/panel-replacement.html,Panels Garage Door Repair,capture urgent intent
+/services/opener-repair.html,/services/spring-replacement.html,Springs service,cross-link related services
+/services/spring-replacement.html,/contact.html,get your quote,conversion CTA
+/,/contact.html,free estimate,route homepage visitors to conversion

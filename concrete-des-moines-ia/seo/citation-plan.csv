@@ -1,0 +1,9 @@
+priority,citation_type,site_or_org,status,notes
+high,core_data_aggregator,Data Axle,planned,submit NAP
+high,core_data_aggregator,Localeze,planned,submit NAP
+high,local_directory,Yelp,planned,complete profile + photos
+high,local_directory,Bing Places,planned,sync business details
+medium,local_directory,Apple Business Connect,planned,verify listing
+medium,chamber,Des Moines Chamber of Commerce,planned,sponsorship/listing option
+medium,local_directory,Nextdoor,planned,claim business listing
+medium,local_sponsorship,local community sponsorship pages,planned,acquire branded backlink

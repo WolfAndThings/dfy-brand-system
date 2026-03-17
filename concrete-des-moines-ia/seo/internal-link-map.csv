@@ -1,0 +1,6 @@
+from_url,to_url,anchor_text,reason
+/,/services/driveways.html,Concrete Driveways in Des Moines,capture primary service intent
+/,/services/sidewalks.html,Sidewalks Concrete,capture urgent intent
+/services/patios.html,/services/driveways.html,Driveways service,cross-link related services
+/services/driveways.html,/contact.html,get your quote,conversion CTA
+/,/contact.html,free estimate,route homepage visitors to conversion

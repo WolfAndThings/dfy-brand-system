@@ -1,0 +1,6 @@
+from_url,to_url,anchor_text,reason
+/,/services/residential.html,Residential Junk Removal in Tacoma,capture primary service intent
+/,/services/same-day.html,Same-Day Junk Removal,capture urgent intent
+/services/commercial.html,/services/residential.html,Residential service,cross-link related services
+/services/residential.html,/contact.html,get your quote,conversion CTA
+/,/contact.html,free estimate,route homepage visitors to conversion

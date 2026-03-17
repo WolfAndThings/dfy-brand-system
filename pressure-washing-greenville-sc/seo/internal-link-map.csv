@@ -1,0 +1,6 @@
+from_url,to_url,anchor_text,reason
+/,/services/house-washing.html,House Washing in Greenville,capture primary service intent
+/,/services/deck-restoration.html,Deck/Patio Pressure Washing,capture urgent intent
+/services/driveway-cleaning.html,/services/house-washing.html,House Wash service,cross-link related services
+/services/house-washing.html,/contact.html,get your quote,conversion CTA
+/,/contact.html,free estimate,route homepage visitors to conversion

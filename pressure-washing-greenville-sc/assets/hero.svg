@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <!-- House outline -->
+  <path d="M80 160 L180 88 L280 160" stroke="#0d5f52" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
+  <rect x="98" y="160" width="164" height="95" rx="3" fill="none" stroke="#0d5f52" stroke-width="3" opacity="0.20"/>
+  <!-- Door -->
+  <rect x="153" y="205" width="34" height="50" rx="2" fill="#0d5f52" opacity="0.12"/>
+  <circle cx="181" cy="232" r="2.5" fill="#0d5f52" opacity="0.18"/>
+  <!-- Windows -->
+  <rect x="113" y="175" width="30" height="24" rx="2" fill="#0d5f52" opacity="0.12"/>
+  <rect x="215" y="175" width="30" height="24" rx="2" fill="#0d5f52" opacity="0.12"/>
+  <line x1="128" y1="175" x2="128" y2="199" stroke="#0d5f52" stroke-width="1" opacity="0.10"/>
+  <line x1="113" y1="187" x2="143" y2="187" stroke="#0d5f52" stroke-width="1" opacity="0.10"/>
+  <line x1="230" y1="175" x2="230" y2="199" stroke="#0d5f52" stroke-width="1" opacity="0.10"/>
+  <line x1="215" y1="187" x2="245" y2="187" stroke="#0d5f52" stroke-width="1" opacity="0.10"/>
+
+  <!-- Ground / driveway -->
+  <rect x="20" y="255" width="360" height="4" rx="2" fill="#0d5f52" opacity="0.18"/>
+  <rect x="98" y="255" width="164" height="25" rx="2" fill="#0d5f52" opacity="0.08"/>
+
+  <!-- Pressure washer unit -->
+  <rect x="300" y="192" width="48" height="60" rx="6" fill="#0d5f52" opacity="0.28"/>
+  <circle cx="324" cy="208" r="12" fill="#d97706" opacity="0.22"/>
+  <rect x="312" y="255" width="24" height="6" rx="3" fill="#0d5f52" opacity="0.15"/>
+
+  <!-- Hose -->
+  <path d="M300 225 C268 225 252 208 228 216 S192 232 172 216 S142 222 122 216" stroke="#0d5f52" stroke-width="4" stroke-linecap="round" opacity="0.18" fill="none"/>
+
+  <!-- Wand -->
+  <line x1="122" y1="216" x2="82" y2="175" stroke="#0d5f52" stroke-width="5" stroke-linecap="round" opacity="0.25"/>
+  <line x1="82" y1="175" x2="72" y2="165" stroke="#d97706" stroke-width="3.5" stroke-linecap="round" opacity="0.30"/>
+
+  <!-- Water spray fan -->
+  <path d="M72 165 L42 125 Q55 120 65 135 L72 165" fill="#0d5f52" opacity="0.10"/>
+  <path d="M72 165 L52 120 Q62 115 70 132 L72 165" fill="#0d5f52" opacity="0.08"/>
+  <line x1="72" y1="165" x2="48" y2="125" stroke="#0d5f52" stroke-width="2.5" stroke-linecap="round" opacity="0.20"/>
+  <line x1="72" y1="165" x2="38" y2="135" stroke="#0d5f52" stroke-width="2" stroke-linecap="round" opacity="0.15"/>
+  <line x1="72" y1="165" x2="58" y2="118" stroke="#0d5f52" stroke-width="2" stroke-linecap="round" opacity="0.12"/>
+
+  <!-- Water droplets -->
+  <circle cx="40" cy="120" r="3.5" fill="#0d5f52" opacity="0.18"/>
+  <circle cx="32" cy="137" r="3" fill="#0d5f52" opacity="0.15"/>
+  <circle cx="52" cy="113" r="2.5" fill="#0d5f52" opacity="0.12"/>
+
+  <!-- Clean vs dirty contrast -->
+  <rect x="98" y="155" width="72" height="5" rx="1" fill="#e8f4f1" opacity="0.35"/>
+  <rect x="170" y="155" width="92" height="5" rx="1" fill="#0d5f52" opacity="0.10"/>
+
+  <!-- Sparkles -->
+  <path d="M112 143 l2.5 -6 l2.5 6 l6 -2.5 l-6 2.5 l2.5 6 l-2.5 -6 l-6 2.5 z" fill="#d97706" opacity="0.25"/>
+  <path d="M138 138 l2 -5 l2 5 l5 -2 l-5 2 l2 5 l-2 -5 l-5 2 z" fill="#d97706" opacity="0.20"/>
+
+  <!-- Decorative -->
+  <circle cx="362" cy="78" r="7" fill="#d97706" opacity="0.18"/>
+  <circle cx="342" cy="118" r="5" fill="#0d5f52" opacity="0.14"/>
+</svg>

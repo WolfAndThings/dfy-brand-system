@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://desmoines.loopworker.com/sitemap.xml

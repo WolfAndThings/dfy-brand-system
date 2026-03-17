@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://boise.loopworker.com/sitemap.xml

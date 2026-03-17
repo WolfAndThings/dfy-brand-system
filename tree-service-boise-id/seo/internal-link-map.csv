@@ -1,0 +1,6 @@
+from_url,to_url,anchor_text,reason
+/,/services/tree-trimming.html,Tree Trimming in Boise,capture primary service intent
+/,/services/stump-grinding.html,Stump Grinding Tree Service,capture urgent intent
+/services/tree-removal.html,/services/tree-trimming.html,Trimming service,cross-link related services
+/services/tree-trimming.html,/contact.html,get your quote,conversion CTA
+/,/contact.html,free estimate,route homepage visitors to conversion
