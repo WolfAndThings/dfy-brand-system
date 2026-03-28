@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emergency Junk Removal in Tacoma, WA | Tacoma Junk Crew</title>
   <meta name="description" content="Need emergency Junk Removal in Tacoma? Tacoma Junk Crew offers same-day and after-hours emergency service. Call 253-555-0112 now for fast dispatch." />
-  <link rel="canonical" href="https://tacoma.loopworker.com/guides/emergency.html" />
+  <link rel="canonical" href="https://services.loopworker.com/junk-removal-tacoma-wa/guides/emergency.html" />
   <link rel="icon" type="image/svg+xml" href="/junk-removal-tacoma-wa/assets/favicon.svg" />
   <link rel="stylesheet" href="/junk-removal-tacoma-wa/assets/style.css" />
   <meta property="og:title" content="Emergency Junk Removal in Tacoma, WA" />
   <meta property="og:description" content="Need emergency Junk Removal? Tacoma Junk Crew offers same-day and after-hours service. Call 253-555-0112." />
-  <meta property="og:url" content="https://tacoma.loopworker.com/guides/emergency.html" />
+  <meta property="og:url" content="https://services.loopworker.com/junk-removal-tacoma-wa/guides/emergency.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tacoma Junk Crew" />
   <meta property="og:locale" content="en_US" />
@@ -19,7 +26,7 @@
   <meta name="twitter:description" content="Need emergency Junk Removal? Tacoma Junk Crew offers same-day and after-hours service. Call 253-555-0112." />
   <meta name="geo.region" content="US-WA" />
   <meta name="geo.placename" content="Tacoma" />
-  <link rel="dns-prefetch" href="https://tacoma.loopworker.com" />
+  <link rel="dns-prefetch" href="https://services.loopworker.com" />
   <meta name="theme-color" content="#0d5f52" />
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="google-site-verification" content="yYD1gX8p9yCjrG20ipnDP1F6aumtbxgwbvBJz2lhYKU" />
@@ -29,12 +36,12 @@
     "@type": "Service",
     "name": "Emergency Junk Removal in Tacoma, WA",
     "description": "Emergency and same-day Junk Removal in Tacoma, WA. Fast dispatch, licensed crews.",
-    "url": "https://tacoma.loopworker.com/guides/emergency.html",
+    "url": "https://services.loopworker.com/junk-removal-tacoma-wa/guides/emergency.html",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Tacoma Junk Crew",
       "telephone": "253-555-0112",
-      "url": "https://tacoma.loopworker.com/",
+      "url": "https://services.loopworker.com/junk-removal-tacoma-wa/",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Tacoma",
@@ -62,13 +69,13 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "item": "https://tacoma.loopworker.com/",
+        "item": "https://services.loopworker.com/junk-removal-tacoma-wa/",
         "name": "Home"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "item": "https://tacoma.loopworker.com/guides/",
+        "item": "https://services.loopworker.com/junk-removal-tacoma-wa/guides/",
         "name": "Guides"
       },
       {
@@ -85,7 +92,7 @@
   <div class="urgency-banner" role="alert">
     <div class="urgency-inner">
       <span class="urgency-pulse"></span>
-      <strong>Spring Booking:</strong> Schedule this week &amp; get <strong>10% off</strong> — limited crews available.
+      <strong>Free Estimates:</strong> Call now for a <strong>no-obligation quote</strong> — fast, friendly local service.
       <a href="tel:253-555-0112" class="urgency-cta">Call Now &rarr;</a>
     </div>
   </div>
@@ -178,5 +185,31 @@
       Text Us
     </a>
   </div>
+
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]');
+    if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
+  });
+  </script>
+
+  <div id="scroll-cta" style="display:none;position:fixed;bottom:80px;left:50%;transform:translateX(-50%);z-index:99;background:var(--brand);color:#fff;padding:12px 24px;border-radius:var(--radius);box-shadow:var(--shadow-lg);text-align:center;max-width:420px;width:calc(100% - 32px);">
+    <p style="margin:0 0 8px;font-weight:600;font-size:0.95rem;">Need Junk Removal? We're booking fast.</p>
+    <div style="display:flex;gap:8px;justify-content:center;">
+      <a href="/junk-removal-tacoma-wa/contact.html" style="background:#fff;color:var(--brand);padding:8px 16px;border-radius:6px;font-weight:600;font-size:0.85rem;text-decoration:none;">Get Free Quote</a>
+      <a href="tel:253-555-0112" style="background:rgba(255,255,255,0.2);color:#fff;padding:8px 16px;border-radius:6px;font-weight:600;font-size:0.85rem;text-decoration:none;">Call 253-555-0112</a>
+    </div>
+    <button onclick="this.parentElement.style.display='none'" style="position:absolute;top:-8px;right:-8px;background:var(--brand-dark);color:#fff;border:none;border-radius:50%;width:24px;height:24px;cursor:pointer;font-size:14px;line-height:1;">&times;</button>
+  </div>
+  <script>
+  (function(){
+    var shown=false,cta=document.getElementById('scroll-cta');
+    if(!cta)return;
+    window.addEventListener('scroll',function(){
+      if(!shown&&window.scrollY>600){cta.style.display='block';shown=true;}
+    });
+  })();
+  </script>
+
 </body>
 </html>

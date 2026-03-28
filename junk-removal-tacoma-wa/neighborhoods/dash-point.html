@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Junk Removal in Dash Point, Tacoma WA | Tacoma Junk Crew</title>
   <meta name="description" content="Professional Junk Removal in Dash Point, Tacoma, WA. Spread-out residential area with large lots, detached workshops, and wooded properties that generate brush, debris, and storage overflow. Call 253-555-0112 for a free estimate." />
-  <link rel="canonical" href="https://tacoma.loopworker.com/neighborhoods/dash-point.html" />
+  <link rel="canonical" href="https://services.loopworker.com/junk-removal-tacoma-wa/neighborhoods/dash-point.html" />
   <link rel="icon" type="image/svg+xml" href="/junk-removal-tacoma-wa/assets/favicon.svg" />
   <link rel="stylesheet" href="/junk-removal-tacoma-wa/assets/style.css" />
   <meta property="og:title" content="Junk Removal in Dash Point, Tacoma | Tacoma Junk Crew" />
   <meta property="og:description" content="Junk Removal in Dash Point, Tacoma, WA. Call 253-555-0112." />
-  <meta property="og:url" content="https://tacoma.loopworker.com/neighborhoods/dash-point.html" />
+  <meta property="og:url" content="https://services.loopworker.com/junk-removal-tacoma-wa/neighborhoods/dash-point.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tacoma Junk Crew" />
   <meta property="og:locale" content="en_US" />
@@ -19,7 +26,7 @@
   <meta name="twitter:description" content="Junk Removal in Dash Point, Tacoma, WA. Call 253-555-0112." />
   <meta name="geo.region" content="US-WA" />
   <meta name="geo.placename" content="Dash Point, Tacoma" />
-  <link rel="dns-prefetch" href="https://tacoma.loopworker.com" />
+  <link rel="dns-prefetch" href="https://services.loopworker.com" />
   <meta name="theme-color" content="#0d5f52" />
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="google-site-verification" content="yYD1gX8p9yCjrG20ipnDP1F6aumtbxgwbvBJz2lhYKU" />
@@ -29,12 +36,12 @@
     "@type": "Service",
     "name": "Junk Removal in Dash Point, Tacoma",
     "description": "Tacoma Junk Crew provides Junk Removal in the Dash Point neighborhood of Tacoma, WA.",
-    "url": "https://tacoma.loopworker.com/neighborhoods/dash-point.html",
+    "url": "https://services.loopworker.com/junk-removal-tacoma-wa/neighborhoods/dash-point.html",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Tacoma Junk Crew",
       "telephone": "253-555-0112",
-      "url": "https://tacoma.loopworker.com/",
+      "url": "https://services.loopworker.com/junk-removal-tacoma-wa/",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Tacoma",
@@ -62,19 +69,19 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "item": "https://tacoma.loopworker.com/",
+        "item": "https://services.loopworker.com/junk-removal-tacoma-wa/",
         "name": "Home"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "item": "https://tacoma.loopworker.com/areas/",
+        "item": "https://services.loopworker.com/junk-removal-tacoma-wa/areas/",
         "name": "Areas"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "item": "https://tacoma.loopworker.com/areas/tacoma.html",
+        "item": "https://services.loopworker.com/junk-removal-tacoma-wa/areas/tacoma.html",
         "name": "Tacoma"
       },
       {
@@ -124,7 +131,7 @@
   <div class="urgency-banner" role="alert">
     <div class="urgency-inner">
       <span class="urgency-pulse"></span>
-      <strong>Spring Booking:</strong> Schedule this week &amp; get <strong>10% off</strong> — limited crews available.
+      <strong>Free Estimates:</strong> Call now for a <strong>no-obligation quote</strong> — fast, friendly local service.
       <a href="tel:253-555-0112" class="urgency-cta">Call Now &rarr;</a>
     </div>
   </div>
@@ -221,5 +228,12 @@
       Text Us
     </a>
   </div>
+
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]');
+    if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
+  });
+  </script>
 </body>
 </html>

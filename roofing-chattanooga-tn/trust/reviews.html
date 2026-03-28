@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Customer Reviews — Chattanooga Roofing Crew Roofing in Chattanooga | Chattanooga Roofing Crew</title>
   <meta name="description" content="Read real customer reviews of Chattanooga Roofing Crew roofing in Chattanooga, TN. See what homeowners say about our roof replacements, repairs, and storm damage response." />
-  <link rel="canonical" href="https://chattanooga.loopworker.com/trust/reviews.html" />
+  <link rel="canonical" href="https://services.loopworker.com/roofing-chattanooga-tn/trust/reviews.html" />
   <link rel="icon" type="image/svg+xml" href="/roofing-chattanooga-tn/assets/favicon.svg" />
   <link rel="stylesheet" href="/roofing-chattanooga-tn/assets/style.css" />
   <meta property="og:title" content="Customer Reviews — Chattanooga Roofing Crew Roofing in Chattanooga" />
   <meta property="og:description" content="Read real customer reviews of Chattanooga Roofing Crew roofing in Chattanooga, TN. See what homeowners say about our roof replacements, repairs, and storm damage response." />
-  <meta property="og:url" content="https://chattanooga.loopworker.com/trust/reviews.html" />
+  <meta property="og:url" content="https://services.loopworker.com/roofing-chattanooga-tn/trust/reviews.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Chattanooga Roofing Crew" />
   <meta property="og:locale" content="en_US" />
@@ -19,7 +26,7 @@
   <meta name="twitter:description" content="Read real customer reviews of Chattanooga Roofing Crew roofing in Chattanooga, TN. See what homeowners say about our roof replacements, repairs, and storm damage response." />
   <meta name="geo.region" content="US-TN" />
   <meta name="geo.placename" content="Chattanooga" />
-  <link rel="dns-prefetch" href="https://chattanooga.loopworker.com" />
+  <link rel="dns-prefetch" href="https://services.loopworker.com" />
   <meta name="theme-color" content="#0d5f52" />
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="google-site-verification" content="yYD1gX8p9yCjrG20ipnDP1F6aumtbxgwbvBJz2lhYKU" />
@@ -31,13 +38,13 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "item": "https://chattanooga.loopworker.com/",
+        "item": "https://services.loopworker.com/roofing-chattanooga-tn/",
         "name": "Home"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "item": "https://chattanooga.loopworker.com/trust/",
+        "item": "https://services.loopworker.com/roofing-chattanooga-tn/trust/",
         "name": "Trust"
       },
       {
@@ -54,7 +61,7 @@
   <div class="urgency-banner" role="alert">
     <div class="urgency-inner">
       <span class="urgency-pulse"></span>
-      <strong>Spring Booking:</strong> Schedule this week &amp; get <strong>10% off</strong> — limited crews available.
+      <strong>Free Estimates:</strong> Call now for a <strong>no-obligation quote</strong> — fast, friendly local service.
       <a href="tel:423-555-0187" class="urgency-cta">Call Now &rarr;</a>
     </div>
   </div>
@@ -199,5 +206,12 @@
       Text Us
     </a>
   </div>
+
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]');
+    if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
+  });
+  </script>
 </body>
 </html>

@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Junk Removal Service Areas | Tacoma Junk Crew</title>
   <meta name="description" content="Tacoma Junk Crew serves Tacoma and surrounding WA communities. See all areas where we provide Junk Removal." />
-  <link rel="canonical" href="https://tacoma.loopworker.com/areas/index.html" />
+  <link rel="canonical" href="https://services.loopworker.com/junk-removal-tacoma-wa/areas/index.html" />
   <link rel="icon" type="image/svg+xml" href="/junk-removal-tacoma-wa/assets/favicon.svg" />
   <link rel="stylesheet" href="/junk-removal-tacoma-wa/assets/style.css" />
   <meta property="og:title" content="Junk Removal Service Areas | Tacoma Junk Crew" />
   <meta property="og:description" content="Tacoma Junk Crew serves Tacoma and surrounding WA communities." />
-  <meta property="og:url" content="https://tacoma.loopworker.com/areas/index.html" />
+  <meta property="og:url" content="https://services.loopworker.com/junk-removal-tacoma-wa/areas/index.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tacoma Junk Crew" />
   <meta property="og:locale" content="en_US" />
@@ -19,7 +26,7 @@
   <meta name="twitter:description" content="Tacoma Junk Crew serves Tacoma and surrounding WA communities." />
   <meta name="geo.region" content="US-WA" />
   <meta name="geo.placename" content="Tacoma" />
-  <link rel="dns-prefetch" href="https://tacoma.loopworker.com" />
+  <link rel="dns-prefetch" href="https://services.loopworker.com" />
   <meta name="theme-color" content="#0d5f52" />
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="google-site-verification" content="yYD1gX8p9yCjrG20ipnDP1F6aumtbxgwbvBJz2lhYKU" />
@@ -31,7 +38,7 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "item": "https://tacoma.loopworker.com/",
+        "item": "https://services.loopworker.com/junk-removal-tacoma-wa/",
         "name": "Home"
       },
       {
@@ -48,7 +55,7 @@
   <div class="urgency-banner" role="alert">
     <div class="urgency-inner">
       <span class="urgency-pulse"></span>
-      <strong>Spring Booking:</strong> Schedule this week &amp; get <strong>10% off</strong> — limited crews available.
+      <strong>Free Estimates:</strong> Call now for a <strong>no-obligation quote</strong> — fast, friendly local service.
       <a href="tel:253-555-0112" class="urgency-cta">Call Now &rarr;</a>
     </div>
   </div>
@@ -203,5 +210,12 @@
       Text Us
     </a>
   </div>
+
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]');
+    if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
+  });
+  </script>
 </body>
 </html>

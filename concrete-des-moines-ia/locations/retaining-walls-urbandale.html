@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Retaining Walls in Urbandale, IA | Des Moines Concrete Team</title>
   <meta name="description" content="Des Moines Concrete Team provides Retaining Walls in Urbandale, IA. Licensed, insured local crews. Call 515-555-0312 for a free estimate." />
-  <link rel="canonical" href="https://desmoines.loopworker.com/locations/retaining-walls-urbandale.html" />
+  <link rel="canonical" href="https://services.loopworker.com/concrete-des-moines-ia/locations/retaining-walls-urbandale.html" />
   <link rel="icon" type="image/svg+xml" href="/concrete-des-moines-ia/assets/favicon.svg" />
   <link rel="stylesheet" href="/concrete-des-moines-ia/assets/style.css" />
   <style>
@@ -23,7 +30,7 @@
   </style>
   <meta property="og:title" content="Retaining Walls in Urbandale, IA | Des Moines Concrete Team" />
   <meta property="og:description" content="Des Moines Concrete Team provides Retaining Walls in Urbandale, IA. Call 515-555-0312." />
-  <meta property="og:url" content="https://desmoines.loopworker.com/locations/retaining-walls-urbandale.html" />
+  <meta property="og:url" content="https://services.loopworker.com/concrete-des-moines-ia/locations/retaining-walls-urbandale.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Des Moines Concrete Team" />
   <meta property="og:locale" content="en_US" />
@@ -32,7 +39,7 @@
   <meta name="twitter:description" content="Des Moines Concrete Team provides Retaining Walls in Urbandale, IA. Call 515-555-0312." />
   <meta name="geo.region" content="US-IA" />
   <meta name="geo.placename" content="Urbandale" />
-  <link rel="dns-prefetch" href="https://desmoines.loopworker.com" />
+  <link rel="dns-prefetch" href="https://services.loopworker.com" />
   <meta name="theme-color" content="#0d5f52" />
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="google-site-verification" content="yYD1gX8p9yCjrG20ipnDP1F6aumtbxgwbvBJz2lhYKU" />
@@ -42,12 +49,12 @@
     "@type": "Service",
     "name": "Retaining Walls in Urbandale, IA",
     "description": "Des Moines Concrete Team provides Retaining Walls in Urbandale, IA. Licensed local crews.",
-    "url": "https://desmoines.loopworker.com/locations/retaining-walls-urbandale.html",
+    "url": "https://services.loopworker.com/concrete-des-moines-ia/locations/retaining-walls-urbandale.html",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Des Moines Concrete Team",
       "telephone": "515-555-0312",
-      "url": "https://desmoines.loopworker.com/",
+      "url": "https://services.loopworker.com/concrete-des-moines-ia/",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Des Moines",
@@ -75,19 +82,19 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "item": "https://desmoines.loopworker.com/",
+        "item": "https://services.loopworker.com/concrete-des-moines-ia/",
         "name": "Home"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "item": "https://desmoines.loopworker.com/#services",
+        "item": "https://services.loopworker.com/concrete-des-moines-ia/#services",
         "name": "Services"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "item": "https://desmoines.loopworker.com/services/retaining-walls.html",
+        "item": "https://services.loopworker.com/concrete-des-moines-ia/services/retaining-walls.html",
         "name": "Retaining Walls"
       },
       {
@@ -159,7 +166,7 @@
   <div class="urgency-banner" role="alert">
     <div class="urgency-inner">
       <span class="urgency-pulse"></span>
-      <strong>Spring Booking:</strong> Schedule this week &amp; get <strong>10% off</strong> — limited crews available.
+      <strong>Free Estimates:</strong> Call now for a <strong>no-obligation quote</strong> — fast, friendly local service.
       <a href="tel:515-555-0312" class="urgency-cta">Call Now &rarr;</a>
     </div>
   </div>
@@ -249,7 +256,7 @@
         <input type="hidden" name="access_key" value="639cb408-807d-41e0-aab8-53467e097ca8" />
         <input type="hidden" name="subject" value="Quick Quote — Des Moines Concrete Team — Urbandale" />
         <input type="hidden" name="from_name" value="Des Moines Concrete Team Website" />
-        <input type="hidden" name="redirect" value="https://desmoines.loopworker.com/contact.html?sent=1" />
+        <input type="hidden" name="redirect" value="https://services.loopworker.com/concrete-des-moines-ia/contact.html?sent=1" />
         <input type="checkbox" name="botcheck" style="display:none" />
         <div class="inline-form-grid">
           <input type="text" name="name" placeholder="Your Name" required />
@@ -306,5 +313,12 @@
       Text Us
     </a>
   </div>
+
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]');
+    if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
+  });
+  </script>
 </body>
 </html>

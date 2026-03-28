@@ -1,3 +1,11 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://services.loopworker.com/sitemap-index.xml
 Sitemap: https://services.loopworker.com/sitemap.xml
+Sitemap: https://services.loopworker.com/junk-removal-tacoma-wa/sitemap.xml
+Sitemap: https://services.loopworker.com/concrete-des-moines-ia/sitemap.xml
+Sitemap: https://services.loopworker.com/garage-door-repair-reno-nv/sitemap.xml
+Sitemap: https://services.loopworker.com/pressure-washing-greenville-sc/sitemap.xml
+Sitemap: https://services.loopworker.com/roofing-chattanooga-tn/sitemap.xml
+Sitemap: https://services.loopworker.com/tree-service-boise-id/sitemap.xml

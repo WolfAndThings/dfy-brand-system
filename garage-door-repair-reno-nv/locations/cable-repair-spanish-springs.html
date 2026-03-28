@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cable Repair in Spanish Springs, NV | Reno Garage Door Pros</title>
   <meta name="description" content="Reno Garage Door Pros provides Cable Repair in Spanish Springs, NV. Licensed, insured local crews. Call 775-555-0243 for a free estimate." />
-  <link rel="canonical" href="https://reno.loopworker.com/locations/cable-repair-spanish-springs.html" />
+  <link rel="canonical" href="https://services.loopworker.com/garage-door-repair-reno-nv/locations/cable-repair-spanish-springs.html" />
   <link rel="icon" type="image/svg+xml" href="/garage-door-repair-reno-nv/assets/favicon.svg" />
   <link rel="stylesheet" href="/garage-door-repair-reno-nv/assets/style.css" />
   <style>
@@ -23,7 +30,7 @@
   </style>
   <meta property="og:title" content="Cable Repair in Spanish Springs, NV | Reno Garage Door Pros" />
   <meta property="og:description" content="Reno Garage Door Pros provides Cable Repair in Spanish Springs, NV. Call 775-555-0243." />
-  <meta property="og:url" content="https://reno.loopworker.com/locations/cable-repair-spanish-springs.html" />
+  <meta property="og:url" content="https://services.loopworker.com/garage-door-repair-reno-nv/locations/cable-repair-spanish-springs.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Reno Garage Door Pros" />
   <meta property="og:locale" content="en_US" />
@@ -32,7 +39,7 @@
   <meta name="twitter:description" content="Reno Garage Door Pros provides Cable Repair in Spanish Springs, NV. Call 775-555-0243." />
   <meta name="geo.region" content="US-NV" />
   <meta name="geo.placename" content="Spanish Springs" />
-  <link rel="dns-prefetch" href="https://reno.loopworker.com" />
+  <link rel="dns-prefetch" href="https://services.loopworker.com" />
   <meta name="theme-color" content="#0d5f52" />
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="google-site-verification" content="yYD1gX8p9yCjrG20ipnDP1F6aumtbxgwbvBJz2lhYKU" />
@@ -42,12 +49,12 @@
     "@type": "Service",
     "name": "Cable Repair in Spanish Springs, NV",
     "description": "Reno Garage Door Pros provides Cable Repair in Spanish Springs, NV. Licensed local crews.",
-    "url": "https://reno.loopworker.com/locations/cable-repair-spanish-springs.html",
+    "url": "https://services.loopworker.com/garage-door-repair-reno-nv/locations/cable-repair-spanish-springs.html",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Reno Garage Door Pros",
       "telephone": "775-555-0243",
-      "url": "https://reno.loopworker.com/",
+      "url": "https://services.loopworker.com/garage-door-repair-reno-nv/",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Reno",
@@ -75,19 +82,19 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "item": "https://reno.loopworker.com/",
+        "item": "https://services.loopworker.com/garage-door-repair-reno-nv/",
         "name": "Home"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "item": "https://reno.loopworker.com/#services",
+        "item": "https://services.loopworker.com/garage-door-repair-reno-nv/#services",
         "name": "Services"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "item": "https://reno.loopworker.com/services/cable-repair.html",
+        "item": "https://services.loopworker.com/garage-door-repair-reno-nv/services/cable-repair.html",
         "name": "Cables"
       },
       {
@@ -159,7 +166,7 @@
   <div class="urgency-banner" role="alert">
     <div class="urgency-inner">
       <span class="urgency-pulse"></span>
-      <strong>Spring Booking:</strong> Schedule this week &amp; get <strong>10% off</strong> — limited crews available.
+      <strong>Free Estimates:</strong> Call now for a <strong>no-obligation quote</strong> — fast, friendly local service.
       <a href="tel:775-555-0243" class="urgency-cta">Call Now &rarr;</a>
     </div>
   </div>
@@ -249,7 +256,7 @@
         <input type="hidden" name="access_key" value="639cb408-807d-41e0-aab8-53467e097ca8" />
         <input type="hidden" name="subject" value="Quick Quote — Reno Garage Door Pros — Spanish Springs" />
         <input type="hidden" name="from_name" value="Reno Garage Door Pros Website" />
-        <input type="hidden" name="redirect" value="https://reno.loopworker.com/contact.html?sent=1" />
+        <input type="hidden" name="redirect" value="https://services.loopworker.com/garage-door-repair-reno-nv/contact.html?sent=1" />
         <input type="checkbox" name="botcheck" style="display:none" />
         <div class="inline-form-grid">
           <input type="text" name="name" placeholder="Your Name" required />
@@ -306,5 +313,12 @@
       Text Us
     </a>
   </div>
+
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]');
+    if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
+  });
+  </script>
 </body>
 </html>

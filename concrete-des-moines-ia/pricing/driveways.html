@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Concrete Driveway Pricing in Des Moines, IA | Des Moines Concrete Team</title>
   <meta name="description" content="How much does driveways cost in Des Moines, IA? Typical range: $3,000 – $10,000. See detailed pricing breakdown, factors, and money-saving tips from Des Moines Concrete Team." />
-  <link rel="canonical" href="https://desmoines.loopworker.com/pricing/driveways.html" />
+  <link rel="canonical" href="https://services.loopworker.com/concrete-des-moines-ia/pricing/driveways.html" />
   <link rel="icon" type="image/svg+xml" href="/concrete-des-moines-ia/assets/favicon.svg" />
   <link rel="stylesheet" href="/concrete-des-moines-ia/assets/style.css" />
   <meta property="og:title" content="Concrete Driveway Pricing in Des Moines, IA" />
   <meta property="og:description" content="How much does driveways cost in Des Moines? Typical range: $3,000 – $10,000. Detailed breakdown from Des Moines Concrete Team." />
-  <meta property="og:url" content="https://desmoines.loopworker.com/pricing/driveways.html" />
+  <meta property="og:url" content="https://services.loopworker.com/concrete-des-moines-ia/pricing/driveways.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Des Moines Concrete Team" />
   <meta property="og:locale" content="en_US" />
@@ -19,7 +26,7 @@
   <meta name="twitter:description" content="How much does driveways cost in Des Moines? Typical range: $3,000 – $10,000. Detailed breakdown from Des Moines Concrete Team." />
   <meta name="geo.region" content="US-IA" />
   <meta name="geo.placename" content="Des Moines" />
-  <link rel="dns-prefetch" href="https://desmoines.loopworker.com" />
+  <link rel="dns-prefetch" href="https://services.loopworker.com" />
   <meta name="theme-color" content="#0d5f52" />
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="google-site-verification" content="yYD1gX8p9yCjrG20ipnDP1F6aumtbxgwbvBJz2lhYKU" />
@@ -50,19 +57,19 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "item": "https://desmoines.loopworker.com/",
+        "item": "https://services.loopworker.com/concrete-des-moines-ia/",
         "name": "Home"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "item": "https://desmoines.loopworker.com/#services",
+        "item": "https://services.loopworker.com/concrete-des-moines-ia/#services",
         "name": "Services"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "item": "https://desmoines.loopworker.com/pricing/",
+        "item": "https://services.loopworker.com/concrete-des-moines-ia/pricing/",
         "name": "Pricing"
       },
       {
@@ -79,7 +86,7 @@
   <div class="urgency-banner" role="alert">
     <div class="urgency-inner">
       <span class="urgency-pulse"></span>
-      <strong>Spring Booking:</strong> Schedule this week &amp; get <strong>10% off</strong> — limited crews available.
+      <strong>Free Estimates:</strong> Call now for a <strong>no-obligation quote</strong> — fast, friendly local service.
       <a href="tel:515-555-0312" class="urgency-cta">Call Now &rarr;</a>
     </div>
   </div>
@@ -255,5 +262,12 @@
       Text Us
     </a>
   </div>
+
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]');
+    if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
+  });
+  </script>
 </body>
 </html>

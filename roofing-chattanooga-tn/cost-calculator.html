@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roofing Cost Calculator | Chattanooga Roofing Crew — Chattanooga, TN</title>
   <meta name="description" content="Estimate your Roofing cost in Chattanooga, TN. Interactive calculator with real local pricing from Chattanooga Roofing Crew. Call 423-555-0187 for an exact quote." />
-  <link rel="canonical" href="https://chattanooga.loopworker.com/cost-calculator.html" />
+  <link rel="canonical" href="https://services.loopworker.com/roofing-chattanooga-tn/cost-calculator.html" />
   <link rel="icon" type="image/svg+xml" href="/roofing-chattanooga-tn/assets/favicon.svg" />
   <link rel="stylesheet" href="/roofing-chattanooga-tn/assets/style.css" />
   <meta property="og:title" content="Roofing Cost Calculator | Chattanooga Roofing Crew" />
   <meta property="og:description" content="Estimate your Roofing cost in Chattanooga. Real local pricing." />
-  <meta property="og:url" content="https://chattanooga.loopworker.com/cost-calculator.html" />
+  <meta property="og:url" content="https://services.loopworker.com/roofing-chattanooga-tn/cost-calculator.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Chattanooga Roofing Crew" />
   <meta property="og:locale" content="en_US" />
@@ -19,7 +26,7 @@
   <meta name="twitter:description" content="Estimate your Roofing cost in Chattanooga. Real local pricing." />
   <meta name="geo.region" content="US-TN" />
   <meta name="geo.placename" content="Chattanooga" />
-  <link rel="dns-prefetch" href="https://chattanooga.loopworker.com" />
+  <link rel="dns-prefetch" href="https://services.loopworker.com" />
   <meta name="theme-color" content="#0d5f52" />
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="google-site-verification" content="yYD1gX8p9yCjrG20ipnDP1F6aumtbxgwbvBJz2lhYKU" />
@@ -31,7 +38,7 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "item": "https://chattanooga.loopworker.com/",
+        "item": "https://services.loopworker.com/roofing-chattanooga-tn/",
         "name": "Home"
       },
       {
@@ -58,13 +65,14 @@
     .calc-result { background:var(--brand); color:#fff; padding:24px; border-radius:var(--radius); text-align:center; margin:24px 0; }
     .calc-result .big-price { font-size:2.5rem; font-weight:700; }
     .calc-result p { opacity:0.9; }
+    .calc-label.selected { border-color: var(--brand); background: var(--brand-light); }
   </style>
 </head>
 <body>
   <div class="urgency-banner" role="alert">
     <div class="urgency-inner">
       <span class="urgency-pulse"></span>
-      <strong>Spring Booking:</strong> Schedule this week &amp; get <strong>10% off</strong> — limited crews available.
+      <strong>Free Estimates:</strong> Call now for a <strong>no-obligation quote</strong> — fast, friendly local service.
       <a href="tel:423-555-0187" class="urgency-cta">Call Now &rarr;</a>
     </div>
   </div>
@@ -142,5 +150,54 @@
       Text Us
     </a>
   </div>
+  <script>
+  (function(){
+    var defaultPrice = document.querySelector('.big-price').textContent;
+    function parsePriceRange(text){
+      var nums = text.replace(/,/g,'').match(/\d+/g);
+      if(!nums) return null;
+      nums = nums.map(Number);
+      if(nums.length >= 2) return [nums[0], nums[1]];
+      if(nums.length === 1) return [nums[0], nums[0]];
+      return null;
+    }
+    function fmt(n){
+      return '$' + n.toLocaleString('en-US');
+    }
+    function update(){
+      var sizeEl = document.querySelector('input[name="size"]:checked');
+      var urgEl = document.querySelector('input[name="urgency"]:checked');
+      document.querySelectorAll('.calc-label').forEach(function(l){ l.classList.remove('selected'); });
+      if(sizeEl) sizeEl.closest('.calc-label').classList.add('selected');
+      if(urgEl) urgEl.closest('.calc-label').classList.add('selected');
+      if(!sizeEl){ document.querySelector('.big-price').textContent = defaultPrice; return; }
+      var sizeRange = parsePriceRange(sizeEl.closest('.calc-label').querySelector('.price').textContent);
+      if(!sizeRange){ document.querySelector('.big-price').textContent = defaultPrice; return; }
+      var lo = sizeRange[0], hi = sizeRange[1];
+      var isPlus = sizeEl.closest('.calc-label').querySelector('.price').textContent.indexOf('+') !== -1;
+      if(urgEl){
+        var urgRange = parsePriceRange(urgEl.closest('.calc-label').querySelector('.price').textContent);
+        if(urgRange){ lo += urgRange[0]; hi += urgRange[1]; }
+      }
+      if(isPlus){
+        document.querySelector('.big-price').textContent = fmt(lo) + '+';
+      } else if(lo === hi){
+        document.querySelector('.big-price').textContent = fmt(lo);
+      } else {
+        document.querySelector('.big-price').textContent = fmt(lo) + ' \u2013 ' + fmt(hi);
+      }
+    }
+    document.querySelectorAll('input[name="size"], input[name="urgency"]').forEach(function(r){
+      r.addEventListener('change', update);
+    });
+  })();
+  </script>
+
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]');
+    if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
+  });
+  </script>
 </body>
 </html>

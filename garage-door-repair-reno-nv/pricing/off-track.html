@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Off-Track Garage Door Repair Pricing in Reno, NV | Reno Garage Door Pros</title>
   <meta name="description" content="How much does off track cost in Reno, NV? Typical range: $125 – $300. See detailed pricing breakdown, factors, and money-saving tips from Reno Garage Door Pros." />
-  <link rel="canonical" href="https://reno.loopworker.com/pricing/off-track.html" />
+  <link rel="canonical" href="https://services.loopworker.com/garage-door-repair-reno-nv/pricing/off-track.html" />
   <link rel="icon" type="image/svg+xml" href="/garage-door-repair-reno-nv/assets/favicon.svg" />
   <link rel="stylesheet" href="/garage-door-repair-reno-nv/assets/style.css" />
   <meta property="og:title" content="Off-Track Garage Door Repair Pricing in Reno, NV" />
   <meta property="og:description" content="How much does off track cost in Reno? Typical range: $125 – $300. Detailed breakdown from Reno Garage Door Pros." />
-  <meta property="og:url" content="https://reno.loopworker.com/pricing/off-track.html" />
+  <meta property="og:url" content="https://services.loopworker.com/garage-door-repair-reno-nv/pricing/off-track.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Reno Garage Door Pros" />
   <meta property="og:locale" content="en_US" />
@@ -19,7 +26,7 @@
   <meta name="twitter:description" content="How much does off track cost in Reno? Typical range: $125 – $300. Detailed breakdown from Reno Garage Door Pros." />
   <meta name="geo.region" content="US-NV" />
   <meta name="geo.placename" content="Reno" />
-  <link rel="dns-prefetch" href="https://reno.loopworker.com" />
+  <link rel="dns-prefetch" href="https://services.loopworker.com" />
   <meta name="theme-color" content="#0d5f52" />
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="google-site-verification" content="yYD1gX8p9yCjrG20ipnDP1F6aumtbxgwbvBJz2lhYKU" />
@@ -50,19 +57,19 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "item": "https://reno.loopworker.com/",
+        "item": "https://services.loopworker.com/garage-door-repair-reno-nv/",
         "name": "Home"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "item": "https://reno.loopworker.com/#services",
+        "item": "https://services.loopworker.com/garage-door-repair-reno-nv/#services",
         "name": "Services"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "item": "https://reno.loopworker.com/pricing/",
+        "item": "https://services.loopworker.com/garage-door-repair-reno-nv/pricing/",
         "name": "Pricing"
       },
       {
@@ -79,7 +86,7 @@
   <div class="urgency-banner" role="alert">
     <div class="urgency-inner">
       <span class="urgency-pulse"></span>
-      <strong>Spring Booking:</strong> Schedule this week &amp; get <strong>10% off</strong> — limited crews available.
+      <strong>Free Estimates:</strong> Call now for a <strong>no-obligation quote</strong> — fast, friendly local service.
       <a href="tel:775-555-0243" class="urgency-cta">Call Now &rarr;</a>
     </div>
   </div>
@@ -255,5 +262,12 @@
       Text Us
     </a>
   </div>
+
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]');
+    if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
+  });
+  </script>
 </body>
 </html>

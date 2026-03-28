@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://desmoines.loopworker.com/sitemap.xml
+Sitemap: https://services.loopworker.com/concrete-des-moines-ia/sitemap.xml

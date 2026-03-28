@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pressure Washing Service Areas | Greenville Pressure Pros</title>
   <meta name="description" content="Greenville Pressure Pros serves Greenville and surrounding SC communities. See all areas where we provide Pressure Washing." />
-  <link rel="canonical" href="https://greenville.loopworker.com/areas/index.html" />
+  <link rel="canonical" href="https://services.loopworker.com/pressure-washing-greenville-sc/areas/index.html" />
   <link rel="icon" type="image/svg+xml" href="/pressure-washing-greenville-sc/assets/favicon.svg" />
   <link rel="stylesheet" href="/pressure-washing-greenville-sc/assets/style.css" />
   <meta property="og:title" content="Pressure Washing Service Areas | Greenville Pressure Pros" />
   <meta property="og:description" content="Greenville Pressure Pros serves Greenville and surrounding SC communities." />
-  <meta property="og:url" content="https://greenville.loopworker.com/areas/index.html" />
+  <meta property="og:url" content="https://services.loopworker.com/pressure-washing-greenville-sc/areas/index.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Greenville Pressure Pros" />
   <meta property="og:locale" content="en_US" />
@@ -19,7 +26,7 @@
   <meta name="twitter:description" content="Greenville Pressure Pros serves Greenville and surrounding SC communities." />
   <meta name="geo.region" content="US-SC" />
   <meta name="geo.placename" content="Greenville" />
-  <link rel="dns-prefetch" href="https://greenville.loopworker.com" />
+  <link rel="dns-prefetch" href="https://services.loopworker.com" />
   <meta name="theme-color" content="#0d5f52" />
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="google-site-verification" content="yYD1gX8p9yCjrG20ipnDP1F6aumtbxgwbvBJz2lhYKU" />
@@ -31,7 +38,7 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "item": "https://greenville.loopworker.com/",
+        "item": "https://services.loopworker.com/pressure-washing-greenville-sc/",
         "name": "Home"
       },
       {
@@ -48,7 +55,7 @@
   <div class="urgency-banner" role="alert">
     <div class="urgency-inner">
       <span class="urgency-pulse"></span>
-      <strong>Spring Booking:</strong> Schedule this week &amp; get <strong>10% off</strong> — limited crews available.
+      <strong>Free Estimates:</strong> Call now for a <strong>no-obligation quote</strong> — fast, friendly local service.
       <a href="tel:864-555-0131" class="urgency-cta">Call Now &rarr;</a>
     </div>
   </div>
@@ -203,5 +210,12 @@
       Text Us
     </a>
   </div>
+
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]');
+    if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
+  });
+  </script>
 </body>
 </html>

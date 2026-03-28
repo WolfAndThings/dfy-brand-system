@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Customer Reviews — Boise Tree Crew Tree Service in Boise | Boise Tree Crew</title>
   <meta name="description" content="Read real customer reviews of Boise Tree Crew tree service in Boise, ID. See what homeowners say about our tree removal, trimming, and storm damage response." />
-  <link rel="canonical" href="https://boise.loopworker.com/trust/reviews.html" />
+  <link rel="canonical" href="https://services.loopworker.com/tree-service-boise-id/trust/reviews.html" />
   <link rel="icon" type="image/svg+xml" href="/tree-service-boise-id/assets/favicon.svg" />
   <link rel="stylesheet" href="/tree-service-boise-id/assets/style.css" />
   <meta property="og:title" content="Customer Reviews — Boise Tree Crew Tree Service in Boise" />
   <meta property="og:description" content="Read real customer reviews of Boise Tree Crew tree service in Boise, ID. See what homeowners say about our tree removal, trimming, and storm damage response." />
-  <meta property="og:url" content="https://boise.loopworker.com/trust/reviews.html" />
+  <meta property="og:url" content="https://services.loopworker.com/tree-service-boise-id/trust/reviews.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Boise Tree Crew" />
   <meta property="og:locale" content="en_US" />
@@ -19,7 +26,7 @@
   <meta name="twitter:description" content="Read real customer reviews of Boise Tree Crew tree service in Boise, ID. See what homeowners say about our tree removal, trimming, and storm damage response." />
   <meta name="geo.region" content="US-ID" />
   <meta name="geo.placename" content="Boise" />
-  <link rel="dns-prefetch" href="https://boise.loopworker.com" />
+  <link rel="dns-prefetch" href="https://services.loopworker.com" />
   <meta name="theme-color" content="#0d5f52" />
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="google-site-verification" content="yYD1gX8p9yCjrG20ipnDP1F6aumtbxgwbvBJz2lhYKU" />
@@ -31,13 +38,13 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "item": "https://boise.loopworker.com/",
+        "item": "https://services.loopworker.com/tree-service-boise-id/",
         "name": "Home"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "item": "https://boise.loopworker.com/trust/",
+        "item": "https://services.loopworker.com/tree-service-boise-id/trust/",
         "name": "Trust"
       },
       {
@@ -54,7 +61,7 @@
   <div class="urgency-banner" role="alert">
     <div class="urgency-inner">
       <span class="urgency-pulse"></span>
-      <strong>Spring Booking:</strong> Schedule this week &amp; get <strong>10% off</strong> — limited crews available.
+      <strong>Free Estimates:</strong> Call now for a <strong>no-obligation quote</strong> — fast, friendly local service.
       <a href="tel:208-555-0126" class="urgency-cta">Call Now &rarr;</a>
     </div>
   </div>
@@ -199,5 +206,12 @@
       Text Us
     </a>
   </div>
+
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]');
+    if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
+  });
+  </script>
 </body>
 </html>
