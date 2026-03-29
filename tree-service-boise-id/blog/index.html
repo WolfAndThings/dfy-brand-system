@@ -195,5 +195,26 @@
     if(a&&typeof gtag==='function'){gtag('event','click_to_call',{event_category:'phone',event_label:a.href});}
   });
   </script>
+
+  <div id="cb-widget" style="position:fixed;bottom:16px;left:16px;z-index:98;">
+    <button id="cb-toggle" onclick="document.getElementById('cb-form').style.display=document.getElementById('cb-form').style.display==='none'?'block':'none'" style="background:var(--brand);color:#fff;border:none;padding:10px 16px;border-radius:24px;font-size:0.85rem;font-weight:600;cursor:pointer;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:6px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Request Callback
+    </button>
+    <div id="cb-form" style="display:none;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-top:8px;box-shadow:var(--shadow-lg);width:260px;">
+      <p style="font-weight:600;font-size:0.9rem;margin:0 0 8px;">We'll call you back in minutes</p>
+      <form action="https://api.web3forms.com/submit" method="POST" style="display:grid;gap:8px;">
+        <input type="hidden" name="access_key" value="639cb408-807d-41e0-aab8-53467e097ca8" />
+        <input type="hidden" name="subject" value="Callback Request — Boise Tree Crew" />
+        <input type="hidden" name="from_name" value="Boise Tree Crew Website" />
+        <input type="hidden" name="redirect" value="https://services.loopworker.com/tree-service-boise-id/contact.html?sent=1" />
+        <input type="checkbox" name="botcheck" style="display:none" />
+        <input type="text" name="name" placeholder="Your name" required style="padding:10px;border:1px solid var(--border);border-radius:6px;font-size:0.9rem;" />
+        <input type="tel" name="phone" placeholder="Phone number" required style="padding:10px;border:1px solid var(--border);border-radius:6px;font-size:0.9rem;" />
+        <button type="submit" style="background:var(--brand);color:#fff;border:none;padding:10px;border-radius:6px;font-size:0.9rem;font-weight:600;cursor:pointer;">Call Me Back &rarr;</button>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>
