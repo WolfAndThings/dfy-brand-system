@@ -1332,4 +1332,40 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://services.loopworker.com/tree-service-boise-id/blog/posts/13-tree-trimming-vs-tree-pruning-difference.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://services.loopworker.com/tree-service-boise-id/blog/posts/14-stump-grinding-vs-stump-removal-boise.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://services.loopworker.com/tree-service-boise-id/blog/posts/15-diy-tree-removal-vs-hiring-a-pro.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://services.loopworker.com/tree-service-boise-id/blog/posts/16-tree-removal-vs-tree-trimming-which-do-you-need.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://services.loopworker.com/tree-service-boise-id/blog/posts/17-arborist-vs-tree-service-company.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://services.loopworker.com/tree-service-boise-id/blog/posts/18-chemical-stump-removal-vs-grinding.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
